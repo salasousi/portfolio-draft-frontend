@@ -4,7 +4,7 @@ import "./App.css";
 // IMPORT COMPONENTS
 import Header from "./components/header";
 import Footer from "./components/footer";
-import { Route, Routes } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 // IMPORT PAGES
 import Home from "./pages/home";
 import About from "./pages/about";
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Routes>
+      <Switch>
         <Route exact path="/">
           <Home />
         </Route>
@@ -27,7 +27,7 @@ function App() {
         <Route path="/about">
           <About URL={URL} />
         </Route>
-      </Routes>
+      </Switch>
       <Footer />
     </div>
   );

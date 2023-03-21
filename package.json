@@ -1,6 +1,5 @@
 {
   "name": "frontend",
-  "homepage": "http://polite-gecko-a70265.netlify.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
